@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
     "start": "npm run server:start",
-    "build": "npm run client:build",
+    "build": "cd client && npm install && npm run build",
     "server:start": "cd server && npm start",
     "server:dev": "cd server && npm run dev",
     "server:install": "cd server && npm install",
@@ -19,7 +19,8 @@
     "client:build": "cd client && npm run build",
     "client:install": "cd client && npm install",
     "install:all": "npm run server:install && npm run client:install",
-    "vercel-build": "npm run client:build",
+    "vercel-build": "cd client && npm install && npm run build",
+    "postinstall": "npm run install:all",
     "test": "cd client && npm test"
   },
   "keywords": [
