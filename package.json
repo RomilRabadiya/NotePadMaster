@@ -1,0 +1,52 @@
+{
+  "name": "notepad-master",
+  "version": "1.0.0",
+  "description": "A full-stack collaborative notepad application built with React and Node.js/Express",
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "start": "npm run server:start",
+    "build": "npm run client:build",
+    "server:start": "cd server && npm start",
+    "server:dev": "cd server && npm run dev",
+    "server:install": "cd server && npm install",
+    "client:start": "cd client && npm start",
+    "client:dev": "cd client && npm start",
+    "client:build": "cd client && npm run build",
+    "client:install": "cd client && npm install",
+    "install:all": "npm run server:install && npm run client:install",
+    "vercel-build": "npm run client:build",
+    "test": "cd client && npm test"
+  },
+  "keywords": [
+    "notepad",
+    "collaborative",
+    "real-time",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "websocket"
+  ],
+  "author": "Romil Rabadiya",
+  "license": "MIT",
+  "homepage": "https://github.com/RomilRabadiya/NotePadMaster#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RomilRabadiya/NotePadMaster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RomilRabadiya/NotePadMaster/issues"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
