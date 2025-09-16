@@ -1,4 +1,4 @@
-# 📝 Notepad App
+# 📝 NotePad Master
 
 A full-stack collaborative notepad application built with React and Node.js/Express.
 
@@ -48,8 +48,8 @@ NotepadProject/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd NotepadProject
+   git clone https://github.com/RomilRabadiya/NotePadMaster.git
+   cd NotePadMaster
    ```
 
 2. **Setup Backend**
@@ -172,3 +172,58 @@ This project is licensed under the MIT License.
 ## 📞 Support
 
 If you encounter any issues, please create an issue in the repository or contact the development team.
+
+---
+
+## 📋 Project Requirements Documentation
+
+### 1. Introduction
+
+#### 1.1 Purpose
+To save notes and share them using a code.
+- Enable Login / Signup with user accounts
+- Allow users to join a room using a code and access the same note across multiple devices
+- Support operations to save, remove, and update notes
+- Provide Undo and Redo functionality for notes
+- Allow users to adjust the font size of the note content
+- Enable users to search notes by title as well as description
+
+#### 1.2 Definitions
+This project is a collaborative note-taking application designed to help users create, manage, and share notes seamlessly across devices. It allows users to register/login, save personal notes, and collaborate in real-time with others by joining shared rooms using a unique code.
+
+The application includes features such as note creation, deletion, and updating, along with Undo/Redo capabilities, font customization, and advanced search based on note title or description. The goal is to provide a user-friendly platform for individuals, teams, and students to capture and organize information efficiently, whether working solo or in a group.
+
+### 2. System Requirements
+
+#### 2.1 Operating Environment
+Platform: Web-based, accessible via modern web browsers on desktops, laptops, tablets, and mobile devices.
+- **Devices**: Computers, laptops, smartphones, and tablets
+- **Operating Systems**: Windows (2000, XP, Vista, 7, 8, 10), macOS, Linux
+- **RAM**: Minimum 128 MB or higher
+- **Disk Space**: Minimum 20 MB of free space
+- **Supported Browsers**: Mozilla Firefox, Google Chrome (Version 27.01+), Microsoft Edge, Safari, Opera
+- **Internet Connection**: Stable, high-speed internet connection required
+
+#### 2.2 Technical Specifications
+- **Frontend**: React, HTML, JavaScript
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JWT-based security
+- **Real-time Features**: WebSocket support for collaboration
+
+### 3. Functional Requirements
+
+- 🔐 **User Registration & Authentication**
+- 📝 **Complete Note Management** (Create, Edit, Delete, Save)
+- ↩️ **Undo/Redo Operations**
+- 🔍 **Advanced Search** (by title and content)
+- 🔠 **Font Size Customization**
+- 🔗 **Note Sharing via Unique Codes**
+- 👥 **Real-Time Collaboration**
+- 📱 **Responsive Design**
+
+### 4. Conclusion
+
+This project provides a powerful yet user-friendly collaborative note-taking platform that enables users to create, manage, and share notes efficiently. With core features such as user authentication, real-time collaboration, note sharing via code, undo/redo operations, font customization, and advanced search, the application caters to both individual users and teams working across multiple devices.
+
+The system is designed with a focus on simplicity, performance, and productivity, allowing users to stay organized and connected. By integrating modern collaboration and usability features, this solution offers a practical tool for students, professionals, and remote teams to capture ideas, share knowledge, and work together in real-time.
